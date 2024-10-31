@@ -1,0 +1,46 @@
+.mlsl-opening-hours {
+	min-width: 300px;
+}
+
+.mlsl-opening-hours table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: none;
+	width: 100%;
+}
+
+.mlsl-opening-hours table tr {
+	border: none;
+	border-color: transparent;
+}
+
+.mlsl-opening-hours table td {
+	border: none;
+	padding: 8px 6px;
+	white-space: nowrap;
+	border-style: solid;
+}
+
+.mlsl-opening-hours table tr:last-child td {
+	border: none;
+}
+
+.mlsl-opening-hours table td.day {
+	font-weight: 600;
+	vertical-align: top;
+}
+
+.mlsl-opening-hours table td.time {
+	text-align: left;
+}
+
+.mlsl-opening-hours table td.time span {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.mlsl-opening-hours table td.time span:last-child {
+	margin-bottom: 0;
+}
+
+

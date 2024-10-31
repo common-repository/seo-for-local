@@ -1,0 +1,259 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "mlsl-block/location-map",
+	"version": "0.1.0",
+	"title": "Location Map",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "A block to add google map for a choosen location post.",
+	"keywords": ["map", "location map", "local seo"],
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "location-map",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"attributes": {
+		"module_class": {
+			"type": "string",
+			"default": "mlsl-location-map-0"
+		},
+		"use_current_post": {
+			"type": "boolean",
+			"default": false
+		},
+		"location_post": {
+			"type": "string",
+			"default": ""
+		},
+		"map_height": {
+			"type": "integer",
+			"default": 440
+		},
+		"map_type": {
+			"type": "string",
+			"default": "roadmap"
+		},
+		"gesture_handling": {
+			"type": "string",
+			"default": "auto"
+		},
+		"show_map_type_control": {
+			"type": "boolean",
+			"default": true
+		},
+		"map_control_map_types": {
+			"type": "array",
+			"default": ["roadmap"]
+		},
+		"map_control_position": {
+			"type": "string",
+			"default": "TOP_LEFT"
+		},
+		"show_zoom_control": {
+			"type": "boolean",
+			"default": true
+		},
+		"zoom_control_position": {
+			"type": "string",
+			"default": "RIGHT_BOTTOM"
+		},
+		"show_scale_control": {
+			"type": "boolean",
+			"default": true
+		},
+		"show_street_view_control": {
+			"type": "boolean",
+			"default": true
+		},
+		"street_view_control_position": {
+			"type": "string",
+			"default": "RIGHT_BOTTOM"
+		},
+		"show_rotate_control": {
+			"type": "boolean",
+			"default": true
+		},
+		"rotate_control_position": {
+			"type": "string",
+			"default": "TOP_LEFT"
+		},
+		"show_fullscreen_control": {
+			"type": "boolean",
+			"default": true
+		},
+		"fullscreen_control_position": {
+			"type": "string",
+			"default": "TOP_RIGHT"
+		},
+		"marker_icon": {
+			"type": "object",
+			"default": {
+				"id": "",
+				"url": ""
+			}
+		},
+		"show_info_window": {
+			"type": "boolean",
+			"default": true
+		},
+		"show_direction_link": {
+			"type": "boolean",
+			"default": true
+		},
+
+		"show_description": {
+			"type": "boolean",
+			"default": true
+		},
+		"show_address": {
+			"type": "boolean",
+			"default": true
+		},
+
+		"show_title": {
+			"type": "boolean",
+			"default": true
+		},
+		"marker_animation": {
+			"type": "string",
+			"default": "DROP"
+		},
+		"map_style": {
+			"type": "string",
+			"default": ""
+		},
+		"info_window_title": {
+			"type": "object",
+			"default": {
+				"fontFamily": {
+					"label": "inherit",
+					"value": "inherit",
+					"google": false
+				},
+				"fontSize": "14px",
+				"fontWeight": "500",
+				"fontStyle": "normal",
+				"lineHeight": "normal",
+				"letterSpacing": "normal",
+				"wordSpacing": "normal",
+				"textAlign": "inherit",
+				"textTransform": "none",
+				"color": "initial",
+				"colorHover": "initial"
+			}
+		},
+		"info_window_title_margin": {
+			"type": "object",
+			"default": {
+				"top": "0",
+				"right": "0",
+				"bottom": "0",
+				"left": "0",
+				"equalSpace": true
+			}
+		},
+		"info_window_title_padding": {
+			"type": "object",
+			"default": {
+				"top": "0",
+				"right": "4px",
+				"bottom": "0",
+				"left": "0",
+				"equalSpace": false
+			}
+		},
+		"info_window_description": {
+			"type": "object",
+			"default": {
+				"fontFamily": {
+					"label": "inherit",
+					"value": "inherit",
+					"google": false
+				},
+				"fontSize": "13px",
+				"fontWeight": "normal",
+				"fontStyle": "normal",
+				"lineHeight": "normal",
+				"letterSpacing": "normal",
+				"wordSpacing": "normal",
+				"textAlign": "inherit",
+				"textTransform": "none",
+				"color": "#555",
+				"colorHover": "initial"
+			}
+		},
+		"info_window_description_margin": {
+			"type": "object",
+			"default": {
+				"top": "2px",
+				"right": "0",
+				"bottom": "0",
+				"left": "0",
+				"equalSpace": false
+			}
+		},
+		"info_window_description_padding": {
+			"type": "object",
+			"default": {
+				"top": "0",
+				"right": "0",
+				"bottom": "0",
+				"left": "0",
+				"equalSpace": true
+			}
+		},
+		"info_window_address": {
+			"type": "object",
+			"default": {
+				"fontFamily": {
+					"label": "inherit",
+					"value": "inherit",
+					"google": false
+				},
+				"fontSize": "13px",
+				"fontWeight": "normal",
+				"fontStyle": "normal",
+				"lineHeight": "normal",
+				"letterSpacing": "normal",
+				"wordSpacing": "normal",
+				"textAlign": "inherit",
+				"textTransform": "none",
+				"color": "#555",
+				"colorHover": "initial"
+			}
+		},
+		"info_window_address_padding": {
+			"type": "object",
+			"default": {
+				"top": "0",
+				"right": "0",
+				"bottom": "0",
+				"left": "0",
+				"equalSpace": true
+			}
+		},
+
+		"info_window_address_margin": {
+			"type": "object",
+			"default": {
+				"top": "2px",
+				"right": "0",
+				"bottom": "0",
+				"left": "0",
+				"equalSpace": false
+			}
+		},
+		"direction_image_alt_title": {
+			"type": "string",
+			"default": "Click to open directions in `Google Maps`"
+		},
+		"direction_image_height": {
+			"type": "integer",
+			"default": 20
+		}
+	}
+}

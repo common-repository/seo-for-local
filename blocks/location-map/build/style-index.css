@@ -1,0 +1,19 @@
+.wpt-mlsl-location-map {
+	position: relative;
+	height: 440px;
+}
+
+.wpt-mlsl-location-map-container .wpt-map-info-window-container {
+	padding: 20px;
+}
+.wpt-mlsl-location-map-container .title-address-direction-container {
+	display: flex;
+	margin-bottom: 14px;
+}
+.wpt-mlsl-location-map-container .title-address-container {
+	flex-grow: 1;
+}
+.wpt-mlsl-location-map-container .direction-container {
+}
+
+

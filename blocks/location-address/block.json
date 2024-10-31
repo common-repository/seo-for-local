@@ -1,0 +1,57 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "mlsl-block/location-address",
+	"version": "0.1.0",
+	"title": "Location Address",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "A block to add address for a choosen location post.",
+	"keywords": ["address", "location address", "local seo"],
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "location-address",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"attributes": {
+		"module_class": {
+			"type": "string",
+			"default": "mlsl-location-opening-hours-0"
+		},
+		"use_current_post": {
+			"type": "boolean",
+			"default": false
+		},
+		"location_post": {
+			"type": "string",
+			"default": ""
+		},
+		"layout": {
+			"type": "string",
+			"default": "single"
+		},
+		"address_typography": {
+			"type": "object",
+			"default": {
+				"fontFamily": {
+					"label": "inherit",
+					"value": "inherit",
+					"google": false
+				},
+				"fontSize": "inherit",
+				"fontWeight": "normal",
+				"fontStyle": "normal",
+				"lineHeight": "normal",
+				"letterSpacing": "normal",
+				"wordSpacing": "normal",
+				"textAlign": "inherit",
+				"textTransform": "none",
+				"color": "initial",
+				"colorHover": "initial"
+			}
+		}
+	}
+}

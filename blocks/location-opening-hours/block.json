@@ -1,0 +1,163 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "mlsl-block/location-opening-hours",
+	"version": "0.1.0",
+	"title": "Location Opening Hours",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "A block to add opening hours for a choosen location post.",
+	"keywords": ["opening hours", "location opening hours", "local seo"],
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"textdomain": "location-opening-hours",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"attributes": {
+		"module_class": {
+			"type": "string",
+			"default": "mlsl-location-opening-hours-0"
+		},
+		"use_current_post": {
+			"type": "boolean",
+			"default": false
+		},
+		"location_post": {
+			"type": "string",
+			"default": ""
+		},
+		"first_day_of_week": {
+			"type": "string",
+			"default": "monday"
+		},
+		"show_closed_days": {
+			"type": "boolean",
+			"default": true
+		},
+		"closed_label": {
+			"type": "string",
+			"default": "Closed"
+		},
+		"time_format": {
+			"type": "string",
+			"default": "12_hour"
+		},
+		"odd_row_bg": {
+			"type": "object",
+			"default": {
+				"color": "initial",
+				"image": "none",
+				"repeat": "initial",
+				"size": "contain",
+				"position": "center center"
+			}
+		},
+		"even_row_bg": {
+			"type": "object",
+			"default": {
+				"color": "initial",
+				"image": "none",
+				"repeat": "initial",
+				"size": "contain",
+				"position": "center center"
+			}
+		},
+		"data_cell_margin": {
+			"type": "object",
+			"default": {
+				"top": "0",
+				"right": "0",
+				"bottom": "0",
+				"left": "0",
+				"equalSpace": true
+			}
+		},
+		"data_cell_padding": {
+			"type": "object",
+			"default": {
+				"top": "6px",
+				"right": "6px",
+				"bottom": "6px",
+				"left": "6px",
+				"equalSpace": true
+			}
+		},
+		"data_cell_border": {
+			"type": "object",
+			"default": {
+				"width": {
+					"top": "1px",
+					"right": "1px",
+					"bottom": "1px",
+					"left": "1px"
+				},
+				"color": "#eeeeee",
+				"style": "solid",
+				"equalWidth": true
+			}
+		},
+		"day_label_typography": {
+			"type": "object",
+			"default": {
+				"fontFamily": {
+					"label": "inherit",
+					"value": "inherit",
+					"google": false
+				},
+				"fontSize": "inherit",
+				"fontWeight": "normal",
+				"fontStyle": "normal",
+				"lineHeight": "normal",
+				"letterSpacing": "normal",
+				"wordSpacing": "normal",
+				"textAlign": "inherit",
+				"textTransform": "none",
+				"color": "initial",
+				"colorHover": "initial"
+			}
+		},
+		"time_typography": {
+			"type": "object",
+			"default": {
+				"fontFamily": {
+					"label": "inherit",
+					"value": "inherit",
+					"google": false
+				},
+				"fontSize": "inherit",
+				"fontWeight": "normal",
+				"fontStyle": "normal",
+				"lineHeight": "normal",
+				"letterSpacing": "normal",
+				"wordSpacing": "normal",
+				"textAlign": "inherit",
+				"textTransform": "none",
+				"color": "initial",
+				"colorHover": "initial"
+			}
+		},
+		"closed_label_typography": {
+			"type": "object",
+			"default": {
+				"fontFamily": {
+					"label": "inherit",
+					"value": "inherit",
+					"google": false
+				},
+				"fontSize": "inherit",
+				"fontWeight": "normal",
+				"fontStyle": "normal",
+				"lineHeight": "normal",
+				"letterSpacing": "normal",
+				"wordSpacing": "normal",
+				"textAlign": "inherit",
+				"textTransform": "none",
+				"color": "initial",
+				"colorHover": "initial"
+			}
+		}
+	}
+}
